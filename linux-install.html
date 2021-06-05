@@ -6,15 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="icon" type="image/png" href="sources/favicon.png">
 </head>
 <body>
 	<nav role="full-horizontal">
 		<ul class="a">
 			<li class="a"><a class="nav" href="index.html">home</a></li>
-			<li class="a"><a class="nav" href="about.html">about</a></li>
 			<li class="a"><a class="nav" href="contact.html">contact</a></li>
 			<li class="a"><a class="nav" href="# "id="darkmodeswitch" onclick="darkmode">darkmode</a></li>
+			<li class="a"><a class="nav" href="https://zerge.xyz/hu">magyar</a></li>
 			<script>
 			document.getElementById("darkmodeswitch").addEventListener("click", darkmode);
 
@@ -49,10 +49,10 @@
 Next, get a flash drive ready for creating a bootable USB drive and plug it in. Make sure it has enough space for the ISO to fit.</p>
 	<p>Next, get a flash drive ready for creating a bootable USB drive and plug it in. Make sure it has enough space for the ISO to fit.</p>
 	<p>If you are on Windows (cringe), open rufus and select your ISO file from the file picker. Select your USB device that you've plugged in. Then you can select either MBR or GPT partinion tables (MBR for older BIOS systems and GPT for newer ones that support UEFI). You can give the flash drive a name, then press start, wait for it to finish and move on to the next step.</p>
-	<p>If you are on Linux (based), you will have to use dd. Be very careful with this, since it can flash your root directory and brick your install. First, identify your USB device using fdisk. For that, use the following command:
+	<p>If you are on Linux (based), you will have to use dd. Be very careful with this, since it can flash your root directory and brick your install. First, open your terminal emulatpr and identify your USB device using fdisk. For that, use the following command:
 sudo fdisk -l
 If you've identified the flash drive, you can locate your ISO file. Open your file explorer and navigate to the iso file, then copy it (Ctrl+C or right-click and select copy.</p>
-	<p>If you have done all this, here's the command we will use for dd:
+	<p>If you have done all this, here's the command we will use for dd:</p>
 	<p><code>sudo dd bs=4M if=path/to/distro.iso of=/dev/sdX status=progress oflag=sync</code></p>
 At <code>if=</code> you can delete <code>path/to/distro.iso</code> and paste your ISO direction, while at <code>of=/dev/sdX</code> change X to the correct drive letter.</p>
 	<p>You can now press enter, and watch it complete. Or just go make coffee, it will take around 5 minutes to finish. When it's done, take your installation USB drive and plug it in to the computer you're trying to install Linux on.</p>
