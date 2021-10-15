@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Zerge.xyz</title>
+<link>http://www.zerge.xyz/</link>
+<description>Zerge.xyz RSS feed. Amennyire tudom, frissen tartom.</description>
+<item>
+<title>Zerge útmutatója egy ingyenes, statikus weboldal létrehozásához</title>
+<link>https://zerge.xyz/create-a-webpage.html</link>
+<guid>https://zerge.xyz/create-a-webpage.html</guid>
+<pubDate>Wed, 06 Oct 2021 15:17:32 GMT </pubDate>
+<description>GitHub és Netlify segítségével létrehozott, (a domain regisztrációjának kivételével) ingyenes weboldal.</description>
+</item>
+<item>
+<title>Zerge útmutatója a GNU/Linux disztrók telepítésehez</title>
+<link>https://zerge.xyz/linux-install.html</link>
+<guid>https://zerge.xyz/linux-install.html</guid>
+<pubDate>Sat, 05 Jun 2021 15:17:32 GMT </pubDate>
+<description>Linux disztrók telepítésében segítséget nyújtó útmutatóm.</description>
+</item>
+</channel>
+</rss>
