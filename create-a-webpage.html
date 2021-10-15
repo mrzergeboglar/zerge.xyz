@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zerge.xyz</title>
+	<style type="text/css">h1,h2,h3{line-height:1.2}</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Egyszerű útmutató GNU/Linux disztribúciók telepítéséhez.">
+	<meta name="author" content="Zerge">
+	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+	<nav role="full-horizontal">
+		<ul class="a">
+			<li class="a"><a class="nav" href="index.html">kezdőlap</a></li>
+			<li class="a"><a class="nav" href="contact.html">kontakt</a></li>
+			<li class="a"><a class="nav" href="# "id="darkmodeswitch" onclick="darkmode">sötét mód</a></li>
+			<li class="a"><a class="nav" href="https://zerge.xyz/en">english</a></li>
+			<script>
+			document.getElementById("darkmodeswitch").addEventListener("click", darkmode);
+
+			function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+			</script>
+		</ul>
+	</nav>
+	<h1>
+		Zerge útmutatója egy majdnem ingyenes statikus weboldal létrehozásához
+	</h1>
+	<p>Az alábbi útmutatóban egy statikus (HTML, CSS és Javascript) futtatására alkalmas weboldal felállítását fogom bemutatni, amit a domain név megvásárlásának kivételével ingyen lehet megoldani.</p>
+	<p><b>Tartalom:</b>
+		<ol>
+			<li><a href="#intro">Bevezető gondolatok</a></li>
+			<li><a href="#need">Amire szükséged lesz:</a></li>
+			<li><a href="#domain">Domain név</a></li>
+			<li><a href="#accounts">Fiókok létrehozása</a></li>
+			<li><a href="#upload-files">GitHub projekt létrehozása, fájlok feltöltése</a></li>
+			<li><a href="#netlify">Netlify beállítása</a></li>
+		</ol>
+	</p>
+	<h2 id="intro" class="orange">Bevezető gondolatok</h2>
+	<p>Mielőtt az alábbiakban taglalt módszerrel hoznál létre weboldalt, győződj meg róla, hogy nem szükséges PHP-t és egyéb szerveroldali szkripteket használnod, mivel a GitHub erre nem nyújt lehetőséget. Viszont ha csak egy egyszerű Wordpress honlapot akarsz létrehozni, amit csak bemutatkozásra, vagy esetenként blogolásra használnál, akkor talán ajánlottabb, hogy egy kis plusz idő befektetésével megpróbáld HTML-ben létrehozni a honlapodat.</p>
+	<p>Ez nem csak azért ajánlott, hogy tanulj, hanem mivel a mai internet egy lassú, túlterhelt szörnyeteg, így fontos, hogy mint hobbiista webnomád, ne ess te is a túltöltött, túlszkriptelt, túlcicomázott, valamint túl sok felesleges funkcióval és maszlaggal ellátott webdizájn csapdájába, mint a rohamosan növekvő számú konszumer horda. <p>Egy egyszerű HTML+CSS oldal nem csak sokkal könnyebben navigálható, ha rendesen fel van építve, de pofátlanul gyorsan betölt, megspórolva a látogatóidnak azokat az értékes másodperceket, amiket más weblapokon a kismillió szkript, felugró ablak, sütielfogadó gomb és egyéb, neofasiszta gyűlöleteszközök betültésére kell pazarolniuk.</p>
+	<h2 id="need" class="orange">Amire szükséged lesz</h2>
+	<ul class="b">
+		<li>egy domain név, amit vagy megvásárolsz, vagy ingyen foglalsz egyet, például  .tk végződésűt</li>
+		<li>egy <a target="blank" href="https://github.com/">GitHub</a> fiók, ide fogjuk feltölteni a honlap által használt fájlokat</li>
+		<li>egy <a target="blank" href="https://www.netlify.com/">Netlify</a> fiók, ez lényegében a honlap motorjaként funkcionál majd</li>
+	</ul>
+	<h2 id="domain" class="orange">Domain név</h2>
+	<p>Mielőtt belekezdünk az oldal felállításába, szükségünk lesz egy domain névre. Sokféle módon van lehetőségünk ezt megszerezni, a legegyszerűbb talán egy névszerveren lefoglalni és megvásárolni a magunknak tetszőt, de léteznek ingyenes megoldások is. </p>
+	<p>Példának okáért <code>.tk</code> végű domain neveket ingyen is szerezhetünk. Hobbi honlapokhoz tudom ajánlani a <code>.xyz</code> végződésű domain neveket, mivel az első három év csak 1 dollárba kerül, valamint az éves megújítása sem túl drága (kb. 8 dollár). Domain regisztrációt szolgáltató honlapokat különböző okokból nem fogok linkelni ebben a cikkben, de egy egyszerű internetes kereséssel rengeteget találhatsz.</p>
+	<h2 id="accouints" class="orange">Fiókok létrehozása</h2>
+	<p><a target="blank" href="https://github.com/">GitHub</a> fiók létrehozásához csak nyisd meg az oldalt, és magától értetődően hozz létre egy új fiókot, vagy ha már rendelkezel eggyel, nyugodtan használd azt. Hasonlóan készíts egy ingyenes <a target="blank" href="https://www.netlify.com/">Netlify</a> fiókot is.</p>
+	<h2 id="upload-files" class="orange">GitHub projekt létrehozása, fájlok feltöltése</h2>
+	<p>Miután bejelentkezel GitHub-ra, a bal oldalon látható zöld színű 'New' gomb megnyomásával hozz létre egy új repositoryt. A következő oldalon adj meg egy projektnevet, célszerű a honlapunk URL-ét ide írni (pl. zerge.xyz). A 'Description' szekcióba írhatsz egy rövid leírást, de nem fontos. A 'Public' opciót hagyjuk bepipálva. A további 3 opciót rád bízom. Ha kész vagy, nyomd meg a 'Create repository' gombot.</p>
+	<p>Mint láthatod, kész is van a honlap 'tárhelye'. Ide az 'Add file' funkcióval töltheted fel a HTML, CSS és egyéb fáljokat, amit most külön nem magyarázok el. Amennyiben nem tudsz HTML kódot írni, ajánlom <a href="https://www.youtube.com/user/cyrexmaster" target="blank">Mérei Tamás (Cyrex)</a> videóit.</p>
+	<p>A GitHub repositoryba töltheted fel a honlapod összes fájlját. Ha valamit meg akarsz változtatni a fájlokban, vagy csak frissítenéd őket, többféleképpen teheted. Vagy a böngészőben megnyitott repository 'Add file' gombjával feltöltöd a módosított fájlt a megfelelő mappába és felülírod az előző verziót. Emellett lehetőséged van vagy a GitHub parancssor programján keresztül, vagy a <a href="https://desktop.github.com/" target="blank">GitHub Desktop</a> GUI interfészen (mezei program) keresztül klónozni a repót, majd elvégezni a módosításokat és végül a 'Commit to main' gombbal (bal alul) feltölteni a módosult fájlokat, ezzel frissítve a honlapot.</p>
+	<h2 id="netlify" class="orange">Netlify beállítása</h2>
+	<p>Nyissuk meg a Netlify fiókunkat, majd a 'New site from Git' gombra kattintva kezdjük el a honlap létrehozását. Kattints a 'New site from Git' gombra, majd válaszd a GitHub opciót és kapcsold össze a GitHub fiókoddal. Ha ez megvan, válaszd ki a honlapodnak létrehozott repository-t.</p>
+	<p>Amint ez kész, a 'Getting started'  gomb alatt menj a 'Set up a custom domain' opcióra. Itt add hozzá a domain nevedet, először subdomain nélkül, így: <code>zerge.xyz</code>, majd az 'Options' gombra kattintva válaszd ki a  'Set as primary domain' opciót. Adj hozzá még egy domain alias-t, ez www.-al kezdődjön, így: <code>www.zerge.xyz</code>.</p>
+	<p>Ezután a hozzáadott domain név mellett megjelenő 'Check DNS configuration' szövegre kattintva megjelenik az 'A record' beállításához szükséges IP cím. A domain szolgáltatód vezérlőpultjában kell hozzáadnod egy A recordot, amibe a szövegbuborékban található számokat (csak a számokat) kell bemásolnod. Miután elmented, egy kis ideig még előfordulhat, hogy nem működik, akár egy napig is eltart, mire frissül a szerver.</p>
+	<p>Az A record hozzáadása után lehetőséged van beállítani, hogy a domain nevedet a Netlify DNS szervere kezelje. Ezt úgy teheted meg, hogy a Netlify 'Domain settings' menüjében a hozzáadott domain melletti 'Options' gombra kattintás után A 'Set up Netlify DNS' opciót választod. Euzán a 'Verify' gombra menj, majd a megjelenő URL-eket a domain szolgáltatód vezérlőpultjában  a névszerverek (name servers) beállítása menüpontban hozzáadod. Érdemes törölni a meglévő értékeket, mielőtt az újakat bemásolod. Mentés után ez a folyamat is eltarthat egy darabig, szóval légy türelemmel. Néhány óra múltán a Netlify 'Domain settings' menüpontjában már mindenféle hibaüzenet nélkül kell, hogy szerepeljenek a domain aliasok, valamint a domain nevek is a honlapodra kell mutassanak.</p>
+	<p>Ha mindennel készen vagy, de az oldal még nem elérhető a saját domain neveden, a Netlify által biztosított alapértelmezett URL-en már elérhető a weboldal, így nekiláthatsz a szerkesztésének, fejlesztésének és bármi egyébnek.</p>
+	<p>Jó szórakozást az új weboldaladdal!</p>
+	<p style="font-style:italic">Amennyiben kérdésed vagy hozzáfűznivalód van, kérlek a <a href=mailto:mr.zergeboglar@gmail.com>mr.zergeboglar (at) gmail.com</a> e-mail címen keress!
+	<footer>
+	Copyright © Zerge, 2021
+	</footer>
+</body>
+</html>
