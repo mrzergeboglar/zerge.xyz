@@ -51,8 +51,8 @@
 Next, get a flash drive ready for creating a bootable USB drive and plug it in. Make sure it has enough space for the ISO to fit.</p>
 	<p>Next, get a flash drive ready for creating a bootable USB drive and plug it in. Make sure it has enough space for the ISO to fit.</p>
 	<p>If you are on Windows (cringe), open rufus and select your ISO file from the file picker. Select your USB device that you've plugged in. Then you can select either MBR or GPT partinion tables (MBR for older BIOS systems and GPT for newer ones that support UEFI). You can give the flash drive a name, then press start, wait for it to finish and move on to the next step.</p>
-	<p>If you are on Linux (based), you will have to use dd. Be very careful with this, since it can flash your root directory and brick your install. First, open your terminal emulatpr and identify your USB device using fdisk. For that, use the following command:
-sudo fdisk -l
+	<p>If you are on Linux (based), you will have to use dd. Be very careful with this, since it can flash your root directory and brick your install. First, open your terminal emulatpr and identify your USB device using lsblk. For that, use the following command:
+<code>lsblk</code>
 If you've identified the flash drive, you can locate your ISO file. Open your file explorer and navigate to the iso file, then copy it (Ctrl+C or right-click and select copy.</p>
 	<p>If you have done all this, here's the command we will use for dd:</p>
 	<p><code>sudo dd bs=4M if=path/to/distro.iso of=/dev/sdX status=progress oflag=sync</code></p>
