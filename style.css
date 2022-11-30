@@ -33,6 +33,9 @@ article h2 {
 	padding: 5px 0 5px 0;
 	margin: 0;
 }
+p {
+	text-indent: 30px;
+}
 p.date {
 	font-style: italic;
 	font-size: 14px;
