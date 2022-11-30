@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Zerge.xyz</title>
+	<style type="text/css">h1,h2,h3{line-height:1.2}</style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A simple guide on how to install Linux distros with GUI installers.">
+	<meta name="author" content="Zerge">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" type="image/png" href="https://zerge.xyz/en/favicon.png">
+</head>
+<body>
+	<nav role="full-horizontal">
+		<ul class="a">
+			<li class="a"><a class="nav" href="https://zerge.xyz/en/index.html">home</a></li>
+			<li class="a"><a class="nav" href="https://zerge.xyz/en/contact.html">contact</a></li>
+			<li class="a"><a class="nav" href="#" id="darkmodeswitch" onclick="darkmode">darkmode</a></li>
+			<li class="a"><a class="nav" href="https://zerge.xyz/">magyar</a></li>
+			<script>
+			document.getElementById("darkmodeswitch").addEventListener("click", darkmode);
+
+			function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+			</script>
+		</ul>
+	</nav>
+	<h1>
+		Video editing crash course
+	</h1>
+	<p>In this guide, I will try to teach you some basics of video editing after I tell you a bit about it's history.</p>
+	<p><b>Contents:</b>
+		</p><ol>
+			<li><a href="https://zerge.xyz/en/linux-install.html#need">What you need:</a></li>
+			<li><a href="https://zerge.xyz/en/linux-install.html#bootable-usb">Bootable USB</a></li>
+			<li><a href="https://zerge.xyz/en/linux-install.html#bios">BIOS or UEFI settings</a></li>
+			<li><a href="https://zerge.xyz/en/linux-install.html#liveusb">Starting the installation</a></li>
+			<li><a href="https://zerge.xyz/en/linux-install.html#partitioning">Partitioning</a></li>
+		</ol>
+	</ul>
+	<h2 id="prologue" class="orange">Prologue</h2>
+	<p>
+		The worldwide spread of easily accessible video editing tools has been a disaster for the human race. Kids nowadays use their iPads and smartphones to make their anime music videos and sigma mindset guides for their TikTok, utilizing apps, which obnoxiously bother the user to pay for a premium subscription. This isn't, and has never been the intended way to edit videos, and I hope to introduce you to some more humane methods of chopping up video and audio clips. But before I can teach you anything, I must take you on a journey, a tale of greed and goodwill, a song of indulgence and initiative.
+	</p>
+	<h2 id="goldenage" class="orange">The Golden Age</h2>
+	<p>
+		In the beginning, there was Paint and Windows Movie Maker. And they were good. These two honest and diligent programs have introduced millions, if not billions to the practice of image manipulation and video editing. We all have some fond memories of fumbling around in Microsoft Paint as children, maybe because we didn't have reliable internet, or because there was nothing else to do on computers back then for children (oh the good old days).
+	</p>
+		<center>
+			<img src="paint.png" width="400"></br><i>Microsoft Paint</i></img>
+		</center>
+	<p>
+		In our blissful youth, we were just slowly getting accustomed to these processes, which were previously deemed very technical, and were absolutely not easily accessible to the average person. Yet, as time passed, through a combination of technological development, internet speed improvements and most importantly, the possibility of the average person to do complicated, resource-intensive work on a home computer, of course with a hint of human ingenuity and determination, video editing and image manipulation were raised from niche departments of behind the scenes work, to the height of being a component of tech literacy. This ascent was further fueled by the emerging meme-culture of the pre-2016 days, where people were selflessly designing new meme templates for everyone to use, and impending talents were hard at work creating era-defining MLG montages of their first-person shooter of choice. Many young people were now infatuated with creative work, perpetuated by the easily accessible, fast and reliable video sharing site, YouTube. Sadly, the YouTube we are familiar with nowadays, is just the ashes and dust of the YouTube of old, a network of such radiant creativity, that it overshadowed simply everything in its own time. This was the time many young creators started looking into more advanced methods of content creation. Back then, software was scarce. For photo manipulation, it was Photoshop, for video editing, it was Premiere Pro, and for creating video effects, the solution was After Effects. One honorable mention is Sony Vegas, which always was and probably still is the most notable competitor of the Adobe video-creation suite. These young, bright minds have found their calling, and starting seriously investing time into learning and mastering such softwares. But nothing lasts for ever, and Adobe had ill intentions, once they had their grasps around a generation of creators.
+	</p>
+	<h2 id="betrayal" class="orange">The Great Betrayal</h2>
+	<p>
+		Adobe inc. is a very well-known tech giant, that, similarly to others of its kin, has garnered an unwavering hatred and resentment from its users throughout the years by using questionable business practices to transform not only their own line-up of products, but by their leading role in the domain, all of their competitors' methods as well. The most infamous of these instances was undoubtedly the introduction of their Creative Cloud service. For those unfamiliar with the topic, let me elaborate on it.
+	</p>
+	<center>
+		<img src="adoge.jpg" width="320"></img>
+	</center>
+	<p>
+		Before the year 2013, Adobe was releasing its already wide range of creativity and production centered products on a normal, buy-and-it's-yours principle. This meant, that if you were a creator, you paid once for a version of, let's say, Premiere Pro. The version you paid for, for example CS3, released in 2007, was sold as a "lifetime license", which meant buying it would let you use it indefinitely. The price of these software licences was not exactly low, but for creators, they were tools, which would return the investment. The purchase of one license meant an assured usage of several years at least, which you would only need to upgrade to a newer version, if you were in desperate need of some newly implemented function. However, Adobe was unsatisfied with their clientbase's financial support towards them, and decided to completely up and rework their licensing system.
+	</p>
+	<h2 id="collapse" class="orange">The collapse</h2>
+	<p>
+		All was well and good for creators until this nefarious decision. Adobe has decided to phase out lifetime product licenses, and opted instead implement, and may God forgive me for uttering this word, a "subscription-based service". This new horror was given the name: Creative Cloud. A name that inwoked anger and disappointment in many of Adobe's loyal users. They were not gonna sit idly by. Upset users have took to the internet and started vocally critisizing the new symbol of exploitation of the creative community. Petitions were started, gaining 30+ thousand signatures in weeks, in opposition to Adobe's anti-community decisions. But Adobe, as big a beast as they are, barely even flinched. They proceeded with their evil plan, turning their past costumers into literal cash cows, infringing not only on their past trust, but also on the dignity of their bread and butter. Adobe has fallen, and thus began the age of software travesty, led by corporations cashing in on the insanely profitable model of subscription services. Netflix, Spotify, and Youtube are just a fraction of the tremendous amounts of services operating on the basic principle of renting, and it seems they are here to stay.
+	</p>
+	<h2 id="hackers" class="orange">La Résistance</h2>
+	<center>
+		<img src="resistance2.webp" alt="La Résistance" width="400"></img>
+	</center>
+	<p>
+		The future seemed bleak. Creative minds were getting accostumed to their terminal condition of "owning nothing and being happy™", however the forces of good always shine the brightest in the darkest of times. The childhood heroes of many a young boy, the humble servants of the impoverished college kids, and the bringers of justice to faceless corporations, the hackers have acted quickly on Adobe's act of aggression. One main purpose of the change to the Creative Cloud system was to circumvent hacking of their most precious products, such as Photoshop, undeniably the most popular creative software ever made. Our brave hackers, however, successfully cracked all Creative Cloud components in one single day after its initial release, and made it available on torrent sites for all to enjoy. Nonetheless, these galiant champions are not our greatest defense against evil corpos, and that is, because free and open source software exists.
+	</p>
+	<center>
+		<img src="crack.png" alt="The solution"></img>
+	</center>
+	<center>
+		<img src="pirates.jpg" alt="The pirate ethics" width="400"></img>
+	</center>
+	<h2 id="opensource" class="orange">The indomitable human spirit</h2>
+	<p>
+		The last bastion of our brutal war with software corpos is undeniably free and open source software. What is it you may ask? Free and open source software refers to any program that is not only free to use by anyone, but its source code is also published for all to see, read and modify. This is not only important because of transparency (so you can be sure the program is not tracking you, stealing your data, or worse), but also because it gives users the possibility of changing and developing the code and in turn the software to suite their needs. A good example of this is the Linux kernel, a FOSS (free and open-source software) kernel, which is the basis for all GNU/Linux distributions and Android is also based on it. Other recognizable examples include Blender, GIMP, the LibreOffice suite, VLC media player, and so on.
+	</p>
+	<center>
+		<img src="rms.webp" alt="Richard Stallman" width="400"></img>
+	</center>
+	<p>
+		So where am I going with all this high-school level creative writing? Well, this was all written to better familiarize you with software development's grim situation, so I can shine a majestic light on you, and motivate you to push forward in this bloody mess, wielding a weapon forged in the caves of github, and distributed to all on their respective package managers. This software, a video editing tool in particular, is named Kdenlive. It is not only powerful, but after some basic tutorials, a super simple video editing program. If you have used Premiere Pro in the past, it might surprise you how easy it is to migrate to Kdenlive, since it shares many UI elements with its pre-paid big brother.
+	</p>
+	<center>
+		<img src="tradition.webp" alt="Retvrn" width="400"></img>
+	</center>
+	<p>
+		
+	</p>
+	<p>
+		After looking through the article, I realized that the structure is basically a carbon copy of Berserk's storyline. This was unintentional in the beginning, but now that I'm concious of it, I will go absolutely apeshit with it.
+	</p>
+	<p style="font-style:italic">If you have any suggestions or comments, please do not hesitate to contact me at <a href="mailto:mr.zergeboglar@gmail.com">mr.zergeboglar (at) gmail.com</a>!
+	</p><footer>
+	Copyright © Zerge, 2021
+	</footer>
+
+
+</body></html>
